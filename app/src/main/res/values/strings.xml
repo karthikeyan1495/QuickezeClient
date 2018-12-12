@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Quickezeclient</string>
+    
+    <!--Login -->
+    <string name="mobile">Mobile</string>
+    <string name="login">Login</string>
+    <string name="otp">OTP</string>
+    <string name="submit">Submit</string>
+    <string name="skip_for_now">Skip for now</string>
+
+    
+    <string name="where_do_want_service">Where Do You Want the Service</string>
+    <string name="at_my_current_location">At My Current Location</string>
+    <string name="search_service_location">Search Service Location</string>
+
+
+
+    <!--All Service -->
+    <string name="all_service">All Service</string>
+
+
+    <!--recommended all service -->
+    <string name="your_locality">Your Locality</string>
+    <string name="search_for_service">Search for service</string>
+    <string name="recommended_service">Recommended Service</string>
+
+
+    <!--Api Error handler-->
+    <string name="something_went_wrong_while_retrieving_information">Something went wrong while retrieving information</string>
+    <string name="no_internet">no internet</string>
+
+
+
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <data>
+
+        <variable
+            name="loginVm"
+            type="com.star.quickezeclient.login.viewmodal.LoginVm"/>
+
+
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:text="@string/skip_for_now"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:onClick="@{loginVm::onClickskip}"
+                android:background="@color/colorPrimaryDark"/>
+
+            <android.support.v7.widget.FitWindowsFrameLayout
+                android:layout_marginTop="50dp"
+                android:id="@+id/newsCardView"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/topbackground">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="15dp">
+
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/logo"/>
+
+
+                    <EditText
+                        android:id="@+id/mobile"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="18sp"
+                        android:hint="@string/mobile"
+                        android:paddingStart="10dp"
+                        android:inputType="number"
+                        android:background="@drawable/button_background_round"/>
+
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:textSize="18sp"
+                        android:text="@string/login"
+                        android:gravity="center"
+                        android:onClick="@{loginVm::onClicklogin}"
+                        android:textColor="@color/white"
+                        android:background="@color/colorPrimaryDark"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"/>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.FitWindowsFrameLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>

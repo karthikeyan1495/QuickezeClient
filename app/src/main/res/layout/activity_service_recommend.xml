@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+
+        <variable
+            name="recommendedVm"
+            type="com.star.quickezeclient.recommendedservice.viewmodal.RecommendedVm"/>
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent">
+
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/your_locality"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/white"
+                                        android:text="@string/your_locality"/>
+
+
+                                    <TextView
+                                        android:id="@+id/current_location"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="16sp"
+                                        android:text="West Saidapet Chennai"
+                                        android:textColor="@color/white"/>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_height="fill_parent"
+                                    android:layout_width="wrap_content"
+                                    android:orientation="vertical">
+
+
+                                    <ImageView
+                                        android:layout_gravity="end"
+                                        android:layout_width="80dp"
+                                        android:layout_height="40dp"
+                                        android:background="@drawable/logo" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        <EditText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:drawableEnd="@drawable/ic_search"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="10dp"
+                            android:hint="@string/search_for_service"
+                           android:background="@drawable/button_background_round">
+
+                        </EditText>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"
+                android:text="@string/recommended_service"
+                android:textColor="@color/black"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recommend_recycleview">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+        </LinearLayout>
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>
